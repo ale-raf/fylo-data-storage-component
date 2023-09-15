@@ -6,38 +6,9 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
-  <body
-    style="
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #0f1b3d;
-      overflow: hidden;
-    "
-  >
-    <main
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        gap: 50px;
-        z-index: 1000;
-      "
-    >
-      <section
-        style="
-          height: 25vh;
-          width: 20vw;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          padding: 20px 40px;
-          border-radius: 10px 100px 10px 10px;
-          background-color: #1a285e;
-        "
-      >
+  <body>
+    <main>
+      <section class="logo-section">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="135" height="40">
             <path
@@ -47,14 +18,7 @@
             />
           </svg>
         </div>
-        <div
-          style="
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 20px;
-          "
-        >
+        <div class="icons-container">
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24">
               <path
@@ -82,72 +46,21 @@
         </div>
       </section>
 
-      <section
-        style="
-        position: relative;
-          height: 15vh;
-          width: 30vw;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 20px 40px;
-          border-radius: 10px;
-          background-color: #1a285e;
-          color: white;
-        "
-      >
-      <div style="position: absolute; top: -45px; right: 40px; padding: 10px 20px; border-radius: 10px; background-color: white; height: 10vh; width: 30%">
-      <p style="font-weight: bold; color: grey;"><span style="margin-right: 10px; color: black; font-size: xx-large; font-weight: bold;">185</span>GB left</p>
-      </div>
-        <p>
-          You've used <span style="font-weight: bold">817 GB</span> of your
-          storage
-        </p>
-        <div
-          style="
-          position: relative;
-            height: 20px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            padding: 3px;
-            border-radius: 20px;
-            background-color: #0f1b3d;
-          "
-        >
-          <div
-            style="
-              height: 15px;
-              width: 75%;
-              border-radius: 20px;
-              background: rgb(236,181,124);
-background: linear-gradient(90deg, rgba(236,181,124,1) 0%, rgba(255,123,166,1) 100%); 
-            "
-          ></div>
-          <div style="position: absolute; right: 120px; content:''; height: 12px; width: 12px; background-color: white; border-radius: 100%;"
-          width: 15px;
-          height: 15px;
-          background: white;
-          border-radius: 100%;
-          right: 0;"></div>
+      <section class="storage-section">
+        <div class="storage-message">
+          <p><span>185</span>GB left</p>
         </div>
-        <div style="display: flex; justify-content: space-between">
-          <p style="font-weight: bold;">0 GB</p>
-          <p style="font-weight: bold;">1000 GB</p>
+        <p>You've used <span>815 GB</span> of your storage</p>
+        <div class="bar-container">
+          <div class="bar-progress"></div>
+        </div>
+        <div>
+          <p>0 GB</p>
+          <p>1000 GB</p>
         </div>
       </section>
     </main>
 
-    <img
-      src="./images/bg-desktop.png"
-      alt=""
-      style="
-        position: absolute;
-        bottom: -15vh;
-        left: 0;
-        width: 100vw;
-        z-index: -999;
-      "
-    />
+    <img src="./images/bg-desktop.png" alt="" />
   </body>
 </html>
