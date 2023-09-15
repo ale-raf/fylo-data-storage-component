@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0f1b3d;
+  background-color: #0d1835;
   overflow: hidden;
 }
 main {
@@ -75,11 +75,21 @@ img {
   position: absolute;
   top: -50px;
   right: 40px;
-  padding: 10px 20px;
+  padding: 5px 15px;
   border-radius: 10px;
   background-color: white;
   height: 10vh;
   width: 30%;
+}
+.storage-message::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border-top: 35px solid white;
+  border-left: 35px solid transparent;
 }
 .storage-message p {
   font-weight: bold;
